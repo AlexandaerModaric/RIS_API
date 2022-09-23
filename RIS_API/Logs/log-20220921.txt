@@ -1,0 +1,249 @@
+2022-09-21 10:21:32.150 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 10:21:45.647 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 10:22:54.866 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 10:23:07.185 +03:00 [INF Executed DbCommand (2,026ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [RISdb]; 
+ ]2022-09-21 10:23:07.497 +03:00 [INF Executed DbCommand (305ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [RISdb] SET READ_COMMITTED_SNAPSHOT ON;
+END; 
+ ]2022-09-21 10:23:07.552 +03:00 [INF Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 10:23:08.263 +03:00 [INF Executed DbCommand (392ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+ ]2022-09-21 10:23:08.266 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 10:23:08.323 +03:00 [INF Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+ ]2022-09-21 10:23:08.365 +03:00 [INF Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+ ]2022-09-21 10:23:08.404 +03:00 [INF Applying migration '20220921072132_CreateDatabase'. 
+ ]2022-09-21 10:23:08.572 +03:00 [INF Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Modalitytypes] (
+    [Id] int NOT NULL IDENTITY,
+    [Namear] nvarchar(25) NOT NULL,
+    [Nameen] nvarchar(25) NOT NULL,
+    CONSTRAINT [PK_Modalitytypes] PRIMARY KEY ([Id])
+); 
+ ]2022-09-21 10:23:08.583 +03:00 [INF Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Patients] (
+    [Id] int NOT NULL IDENTITY,
+    [PatientId] nvarchar(max) NOT NULL,
+    [Firstname] nvarchar(25) NOT NULL,
+    [Middlename] nvarchar(25) NULL,
+    [Lastname] nvarchar(25) NOT NULL,
+    [Sex] nvarchar(max) NOT NULL,
+    [Mothername] nvarchar(max) NULL,
+    [Birthdate] datetime2 NULL,
+    CONSTRAINT [PK_Patients] PRIMARY KEY ([Id])
+); 
+ ]2022-09-21 10:23:08.643 +03:00 [INF Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Proceduretypes] (
+    [Id] int NOT NULL IDENTITY,
+    [Parentnum] int NOT NULL,
+    [Namear] nvarchar(25) NOT NULL,
+    [Nameen] nvarchar(25) NOT NULL,
+    CONSTRAINT [PK_Proceduretypes] PRIMARY KEY ([Id])
+); 
+ ]2022-09-21 10:23:08.661 +03:00 [INF Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Modalities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(25) NOT NULL,
+    [AeTitle] nvarchar(25) NOT NULL,
+    [IpAddress] nvarchar(25) NOT NULL,
+    [Port] int NOT NULL,
+    [Description] nvarchar(200) NULL,
+    [Modalitytypeid] int NOT NULL,
+    CONSTRAINT [PK_Modalities] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Modalities_Modalitytypes_Modalitytypeid] FOREIGN KEY ([Modalitytypeid]) REFERENCES [Modalitytypes] ([Id]) ON DELETE CASCADE
+); 
+ ]2022-09-21 10:23:08.716 +03:00 [INF Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [HL7Messages] (
+    [Id] int NOT NULL IDENTITY,
+    [Patientid] int NOT NULL,
+    [Modalityid] int NOT NULL,
+    [Proceduretypeid] int NOT NULL,
+    [Studyid] nvarchar(max) NOT NULL,
+    [Startdate] datetime2 NULL,
+    [Statusid] int NULL,
+    [Accessionnumber] int NULL,
+    [Insertdate] datetime2 NULL,
+    [ModalitytypeId] int NULL,
+    CONSTRAINT [PK_HL7Messages] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_HL7Messages_Modalities_Modalityid] FOREIGN KEY ([Modalityid]) REFERENCES [Modalities] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_HL7Messages_Modalitytypes_ModalitytypeId] FOREIGN KEY ([ModalitytypeId]) REFERENCES [Modalitytypes] ([Id]),
+    CONSTRAINT [FK_HL7Messages_Patients_Patientid] FOREIGN KEY ([Patientid]) REFERENCES [Patients] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_HL7Messages_Proceduretypes_Proceduretypeid] FOREIGN KEY ([Proceduretypeid]) REFERENCES [Proceduretypes] ([Id]) ON DELETE CASCADE
+); 
+ ]2022-09-21 10:23:08.725 +03:00 [INF Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_Modalityid] ON [HL7Messages] ([Modalityid]); 
+ ]2022-09-21 10:23:08.727 +03:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_ModalitytypeId] ON [HL7Messages] ([ModalitytypeId]); 
+ ]2022-09-21 10:23:08.729 +03:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_Patientid] ON [HL7Messages] ([Patientid]); 
+ ]2022-09-21 10:23:08.731 +03:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_Proceduretypeid] ON [HL7Messages] ([Proceduretypeid]); 
+ ]2022-09-21 10:23:08.733 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Modalities_Modalitytypeid] ON [Modalities] ([Modalitytypeid]); 
+ ]2022-09-21 10:23:08.844 +03:00 [INF Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220921072132_CreateDatabase', N'6.0.9'); 
+ ]2022-09-21 15:52:21.731 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 15:52:28.603 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 15:52:29.990 +03:00 [INF Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 15:52:30.330 +03:00 [INF Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [RISdb] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END; 
+ ]2022-09-21 15:52:30.404 +03:00 [INF Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+DROP DATABASE [RISdb]; 
+ ]2022-09-21 15:53:17.158 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 15:53:31.433 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 15:53:33.228 +03:00 [INF Executed DbCommand (720ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [RISdb]; 
+ ]2022-09-21 15:53:33.477 +03:00 [INF Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [RISdb] SET READ_COMMITTED_SNAPSHOT ON;
+END; 
+ ]2022-09-21 15:53:33.534 +03:00 [INF Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 15:53:33.943 +03:00 [INF Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+ ]2022-09-21 15:53:33.948 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 15:53:34.028 +03:00 [INF Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+ ]2022-09-21 15:53:34.045 +03:00 [INF Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+ ]2022-09-21 15:53:34.100 +03:00 [INF Applying migration '20220921125317_CreateDatabase'. 
+ ]2022-09-21 15:53:34.247 +03:00 [INF Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Modalitytypes] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(25) NOT NULL,
+    CONSTRAINT [PK_Modalitytypes] PRIMARY KEY ([Id])
+); 
+ ]2022-09-21 15:53:34.251 +03:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Patients] (
+    [Id] int NOT NULL IDENTITY,
+    [PatientId] nvarchar(max) NOT NULL,
+    [Firstname] nvarchar(25) NOT NULL,
+    [Middlename] nvarchar(25) NULL,
+    [Lastname] nvarchar(25) NOT NULL,
+    [Sex] nvarchar(max) NOT NULL,
+    [Mothername] nvarchar(max) NOT NULL,
+    [Birthdate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Patients] PRIMARY KEY ([Id])
+); 
+ ]2022-09-21 15:53:34.257 +03:00 [INF Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Proceduretypes] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(25) NOT NULL,
+    CONSTRAINT [PK_Proceduretypes] PRIMARY KEY ([Id])
+); 
+ ]2022-09-21 15:53:34.273 +03:00 [INF Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Modalities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(25) NOT NULL,
+    [AeTitle] nvarchar(25) NOT NULL,
+    [IpAddress] nvarchar(25) NOT NULL,
+    [Port] int NOT NULL,
+    [Description] nvarchar(200) NULL,
+    [Modalitytypeid] int NOT NULL,
+    CONSTRAINT [PK_Modalities] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Modalities_Modalitytypes_Modalitytypeid] FOREIGN KEY ([Modalitytypeid]) REFERENCES [Modalitytypes] ([Id]) ON DELETE CASCADE
+); 
+ ]2022-09-21 15:53:34.284 +03:00 [INF Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [HL7Messages] (
+    [Id] int NOT NULL IDENTITY,
+    [Patientid] int NOT NULL,
+    [Modalityid] int NOT NULL,
+    [Proceduretypeid] int NOT NULL,
+    [Studyid] nvarchar(max) NOT NULL,
+    [Startdate] datetime2 NOT NULL,
+    [Accessionnumber] int NOT NULL,
+    [Insertdate] datetime2 NOT NULL,
+    [ModalitytypeId] int NULL,
+    CONSTRAINT [PK_HL7Messages] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_HL7Messages_Modalities_Modalityid] FOREIGN KEY ([Modalityid]) REFERENCES [Modalities] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_HL7Messages_Modalitytypes_ModalitytypeId] FOREIGN KEY ([ModalitytypeId]) REFERENCES [Modalitytypes] ([Id]),
+    CONSTRAINT [FK_HL7Messages_Patients_Patientid] FOREIGN KEY ([Patientid]) REFERENCES [Patients] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_HL7Messages_Proceduretypes_Proceduretypeid] FOREIGN KEY ([Proceduretypeid]) REFERENCES [Proceduretypes] ([Id]) ON DELETE CASCADE
+); 
+ ]2022-09-21 15:53:34.286 +03:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_Modalityid] ON [HL7Messages] ([Modalityid]); 
+ ]2022-09-21 15:53:34.288 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_ModalitytypeId] ON [HL7Messages] ([ModalitytypeId]); 
+ ]2022-09-21 15:53:34.289 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_Patientid] ON [HL7Messages] ([Patientid]); 
+ ]2022-09-21 15:53:34.291 +03:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_HL7Messages_Proceduretypeid] ON [HL7Messages] ([Proceduretypeid]); 
+ ]2022-09-21 15:53:34.293 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Modalities_Modalitytypeid] ON [Modalities] ([Modalitytypeid]); 
+ ]2022-09-21 15:53:34.297 +03:00 [INF Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220921125317_CreateDatabase', N'6.0.9'); 
+ ]2022-09-21 16:06:58.443 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 16:07:10.877 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-21 16:07:14.596 +03:00 [INF Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 16:07:14.706 +03:00 [INF Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+ ]2022-09-21 16:07:14.717 +03:00 [INF Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 
+ ]2022-09-21 16:07:14.719 +03:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+ ]2022-09-21 16:07:14.795 +03:00 [INF Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+ ]2022-09-21 16:07:14.851 +03:00 [INF Applying migration '20220921130700_SeedingData'. 
+ ]2022-09-21 16:07:15.348 +03:00 [INF Executed DbCommand (221ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[Modalitytypes]'))
+    SET IDENTITY_INSERT [Modalitytypes] ON;
+INSERT INTO [Modalitytypes] ([Id], [Name])
+VALUES (1, N'CR'),
+(2, N'DR');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[Modalitytypes]'))
+    SET IDENTITY_INSERT [Modalitytypes] OFF; 
+ ]2022-09-21 16:07:15.388 +03:00 [INF Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[Proceduretypes]'))
+    SET IDENTITY_INSERT [Proceduretypes] ON;
+INSERT INTO [Proceduretypes] ([Id], [Name])
+VALUES (1, N'Shoulder'),
+(2, N'Head');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[Proceduretypes]'))
+    SET IDENTITY_INSERT [Proceduretypes] OFF; 
+ ]2022-09-21 16:07:15.448 +03:00 [INF Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AeTitle', N'Description', N'IpAddress', N'Modalitytypeid', N'Name', N'Port') AND [object_id] = OBJECT_ID(N'[Modalities]'))
+    SET IDENTITY_INSERT [Modalities] ON;
+INSERT INTO [Modalities] ([Id], [AeTitle], [Description], [IpAddress], [Modalitytypeid], [Name], [Port])
+VALUES (1, N'CRModAE', N'CR Modality', N'127.0.0.1', 1, N'CR_Modality', 104);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AeTitle', N'Description', N'IpAddress', N'Modalitytypeid', N'Name', N'Port') AND [object_id] = OBJECT_ID(N'[Modalities]'))
+    SET IDENTITY_INSERT [Modalities] OFF; 
+ ]2022-09-21 16:07:15.481 +03:00 [INF Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AeTitle', N'Description', N'IpAddress', N'Modalitytypeid', N'Name', N'Port') AND [object_id] = OBJECT_ID(N'[Modalities]'))
+    SET IDENTITY_INSERT [Modalities] ON;
+INSERT INTO [Modalities] ([Id], [AeTitle], [Description], [IpAddress], [Modalitytypeid], [Name], [Port])
+VALUES (2, N'MRModAE', N'MR Modality', N'127.0.0.1', 1, N'MR_Modality', 104);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AeTitle', N'Description', N'IpAddress', N'Modalitytypeid', N'Name', N'Port') AND [object_id] = OBJECT_ID(N'[Modalities]'))
+    SET IDENTITY_INSERT [Modalities] OFF; 
+ ]2022-09-21 16:07:15.486 +03:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220921130700_SeedingData', N'6.0.9'); 
+ ]

@@ -1,0 +1,80 @@
+2022-09-19 19:13:46.081 +03:00 [INF Application Is Starting 
+ ]2022-09-19 19:13:46.604 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:13:46.859 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:13:46.895 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-19 19:13:46.897 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-19 19:13:46.906 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-19 19:13:46.906 +03:00 [INF Hosting environment: Development 
+ ]2022-09-19 19:13:46.907 +03:00 [INF Content root path: D:\RisV2\RIS2022\RIS_API\ 
+ ]2022-09-19 19:14:06.051 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger - - 
+ ]2022-09-19 19:14:06.287 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger - - - 301 0 - 247.0483ms 
+ ]2022-09-19 19:14:06.318 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-19 19:14:07.002 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 683.7886ms 
+ ]2022-09-19 19:14:07.139 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/swagger-ui.css - - 
+ ]2022-09-19 19:14:07.459 +03:00 [INF Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ ]2022-09-19 19:14:07.460 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/swagger-ui.css - - - 200 143632 text/css 320.8238ms 
+ ]2022-09-19 19:14:07.499 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/swagger-ui-bundle.js - - 
+ ]2022-09-19 19:14:07.544 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-19 19:14:07.590 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/swagger-ui-standalone-preset.js - - 
+ ]2022-09-19 19:14:07.629 +03:00 [INF Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ ]2022-09-19 19:14:07.630 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 40.0346ms 
+ ]2022-09-19 19:14:07.675 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-19 19:14:07.679 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 3.9335ms 
+ ]2022-09-19 19:14:07.883 +03:00 [INF Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ ]2022-09-19 19:14:07.884 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 384.8331ms 
+ ]2022-09-19 19:14:08.678 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1134.0509ms 
+ ]2022-09-19 19:14:09.177 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-19 19:14:09.178 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-19 19:14:09.178 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 200 665 image/png 0.8217ms 
+ ]2022-09-19 19:14:09.310 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-19 19:14:09.354 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 43.9238ms 
+ ]2022-09-19 19:33:50.478 +03:00 [INF Application Is Starting 
+ ]2022-09-19 19:33:51.083 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:33:51.226 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:33:51.256 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-19 19:33:51.261 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-19 19:33:51.277 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-19 19:33:51.278 +03:00 [INF Hosting environment: Development 
+ ]2022-09-19 19:33:51.278 +03:00 [INF Content root path: D:\RisV2\RIS2022\RIS_API\ 
+ ]2022-09-19 19:33:53.547 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-19 19:33:54.146 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 606.8293ms 
+ ]2022-09-19 19:33:54.386 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-19 19:33:54.394 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 8.5283ms 
+ ]2022-09-19 19:33:54.475 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-19 19:33:54.641 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.0416ms 
+ ]2022-09-19 19:33:55.014 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-19 19:33:55.043 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-19 19:33:55.043 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 0 665 image/png 28.8153ms 
+ ]2022-09-19 19:33:55.205 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-19 19:33:55.248 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.4166ms 
+ ]2022-09-19 19:35:30.380 +03:00 [INF Application Is Starting 
+ ]2022-09-19 19:35:30.766 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:35:30.905 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:35:30.921 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-19 19:35:30.923 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-19 19:35:30.933 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-19 19:35:30.934 +03:00 [INF Hosting environment: Development 
+ ]2022-09-19 19:35:30.934 +03:00 [INF Content root path: D:\RisV2\RIS2022\RIS_API\ 
+ ]2022-09-19 19:35:32.498 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-19 19:35:32.668 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 404 0 - 177.4209ms 
+ ]2022-09-19 19:35:32.717 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/favicon.ico - - 
+ ]2022-09-19 19:35:32.722 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/favicon.ico - - - 404 0 - 5.2872ms 
+ ]2022-09-19 19:37:05.433 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-19 19:37:05.437 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 404 0 - 4.2821ms 
+ ]2022-09-19 19:38:56.486 +03:00 [INF Application Is Starting 
+ ]2022-09-19 19:38:56.728 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:38:56.820 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-19 19:38:56.830 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-19 19:38:56.832 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-19 19:38:56.838 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-19 19:38:56.839 +03:00 [INF Hosting environment: Development 
+ ]2022-09-19 19:38:56.839 +03:00 [INF Content root path: D:\RisV2\RIS2022\RIS_API\ 
+ ]2022-09-19 19:38:57.827 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-19 19:38:58.393 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 570.0041ms 
+ ]2022-09-19 19:38:58.458 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-19 19:38:58.463 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-19 19:38:58.482 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 19.1069ms 
+ ]2022-09-19 19:38:58.812 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 353.6978ms 
+ ]2022-09-19 19:38:59.253 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-19 19:38:59.313 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 62.0691ms 
+ ]
