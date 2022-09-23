@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RIS_API.Configurations;
 using RIS_API.Data;
+using RIS_API.IRepositories;
+using RIS_API.Repositories;
 using Serilog;
 #region Serilog Configuration
 Log.Logger = new LoggerConfiguration()
@@ -22,7 +24,8 @@ builder.Services.AddDbContext<RISDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("sqlConnection")
 ));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson(options=>
+options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -39,6 +42,7 @@ builder.Services.AddCors(cors =>
     });
 });
 builder.Services.AddAutoMapper(typeof(MapperInitializer));
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

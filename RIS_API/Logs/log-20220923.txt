@@ -1,0 +1,217 @@
+2022-09-23 14:40:53.555 +03:00 [INF Application Is Starting 
+ ]2022-09-23 14:40:54.134 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:40:54.261 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:40:54.275 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-23 14:40:54.277 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-23 14:40:54.287 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-23 14:40:54.287 +03:00 [INF Hosting environment: Development 
+ ]2022-09-23 14:40:54.287 +03:00 [INF Content root path: C:\Users\hp\source\repos\RIS_API\RIS_API\ 
+ ]2022-09-23 14:40:59.987 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-23 14:41:00.952 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 972.9098ms 
+ ]2022-09-23 14:41:01.248 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-23 14:41:01.259 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 10.1810ms 
+ ]2022-09-23 14:41:01.259 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-23 14:41:01.464 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 204.5695ms 
+ ]2022-09-23 14:41:01.659 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-23 14:41:01.687 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-23 14:41:01.688 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 0 665 image/png 28.1316ms 
+ ]2022-09-23 14:41:01.885 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-23 14:41:02.190 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 305.3359ms 
+ ]2022-09-23 14:41:21.910 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/api/Patients - - 
+ ]2022-09-23 14:41:21.948 +03:00 [INF Executing endpoint 'RIS_API.Controllers.PatientsController.Get (RIS_API)' 
+ ]2022-09-23 14:41:21.989 +03:00 [INF Route matched with {action = "Get", controller = "Patients"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller RIS_API.Controllers.PatientsController (RIS_API). 
+ ]2022-09-23 14:41:22.007 +03:00 [INF Executing ObjectResult, writing value of type 'System.String[]'. 
+ ]2022-09-23 14:41:22.049 +03:00 [INF Executed action RIS_API.Controllers.PatientsController.Get (RIS_API) in 41.4744ms 
+ ]2022-09-23 14:41:22.051 +03:00 [INF Executed endpoint 'RIS_API.Controllers.PatientsController.Get (RIS_API)' 
+ ]2022-09-23 14:41:22.052 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/api/Patients - - - 200 - application/json;+charset=utf-8 142.9547ms 
+ ]2022-09-23 14:42:45.952 +03:00 [INF Application Is Starting 
+ ]2022-09-23 14:42:46.399 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:42:46.777 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:42:46.797 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-23 14:42:46.799 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-23 14:42:46.813 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-23 14:42:46.815 +03:00 [INF Hosting environment: Development 
+ ]2022-09-23 14:42:46.815 +03:00 [INF Content root path: C:\Users\hp\source\repos\RIS_API\RIS_API\ 
+ ]2022-09-23 14:42:48.389 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-23 14:42:48.975 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 594.8789ms 
+ ]2022-09-23 14:42:50.378 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-23 14:42:50.488 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-23 14:42:50.529 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 40.8262ms 
+ ]2022-09-23 14:42:51.025 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 647.3924ms 
+ ]2022-09-23 14:42:51.593 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-23 14:42:51.622 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-23 14:42:51.623 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 0 665 image/png 29.7596ms 
+ ]2022-09-23 14:42:51.877 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-23 14:42:52.165 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 287.9718ms 
+ ]2022-09-23 14:42:57.993 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - 
+ ]2022-09-23 14:42:58.019 +03:00 [INF Executing endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 14:42:58.134 +03:00 [INF Route matched with {action = "GetProcedureTypes", controller = "ProcedureTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProcedureTypes() on controller RIS_API.Controllers.ProcedureTypesController (RIS_API). 
+ ]2022-09-23 14:42:58.163 +03:00 [INF Executed action RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API) in 6.5568ms 
+ ]2022-09-23 14:42:58.169 +03:00 [INF Executed endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 14:42:58.173 +03:00 [ERR An unhandled exception has occurred while executing the request. 
+ System.InvalidOperationException: Unable to resolve service for type 'RIS_API.IRepositories.IUnitOfWork' while attempting to activate 'RIS_API.Controllers.ProcedureTypesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+]2022-09-23 14:42:58.324 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - - 500 - text/plain;+charset=utf-8 331.5903ms 
+ ]2022-09-23 14:46:59.822 +03:00 [INF Application Is Starting 
+ ]2022-09-23 14:47:00.070 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:47:00.165 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:47:00.176 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-23 14:47:00.178 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-23 14:47:00.186 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-23 14:47:00.188 +03:00 [INF Hosting environment: Development 
+ ]2022-09-23 14:47:00.188 +03:00 [INF Content root path: C:\Users\hp\source\repos\RIS_API\RIS_API\ 
+ ]2022-09-23 14:47:01.157 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-23 14:47:01.592 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 440.9121ms 
+ ]2022-09-23 14:47:01.643 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-23 14:47:01.647 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-23 14:47:01.675 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 28.1017ms 
+ ]2022-09-23 14:47:01.792 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.8965ms 
+ ]2022-09-23 14:47:01.956 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-23 14:47:01.993 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-23 14:47:01.993 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 0 665 image/png 36.7074ms 
+ ]2022-09-23 14:47:02.154 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-23 14:47:02.378 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 223.3940ms 
+ ]2022-09-23 14:47:15.414 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - 
+ ]2022-09-23 14:47:15.452 +03:00 [INF Executing endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 14:47:15.563 +03:00 [INF Route matched with {action = "GetProcedureTypes", controller = "ProcedureTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProcedureTypes() on controller RIS_API.Controllers.ProcedureTypesController (RIS_API). 
+ ]2022-09-23 14:47:16.345 +03:00 [INF Executed action RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API) in 756.9475ms 
+ ]2022-09-23 14:47:16.349 +03:00 [INF Executed endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 14:47:16.351 +03:00 [ERR An unhandled exception has occurred while executing the request. 
+ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'RIS_API.Controllers.ProcedureTypesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+]2022-09-23 14:47:16.418 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - - 500 - text/plain;+charset=utf-8 1004.0245ms 
+ ]2022-09-23 14:48:47.276 +03:00 [INF Application Is Starting 
+ ]2022-09-23 14:48:47.513 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:48:47.602 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 14:48:47.620 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-23 14:48:47.621 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-23 14:48:47.627 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-23 14:48:47.628 +03:00 [INF Hosting environment: Development 
+ ]2022-09-23 14:48:47.628 +03:00 [INF Content root path: C:\Users\hp\source\repos\RIS_API\RIS_API\ 
+ ]2022-09-23 14:48:50.588 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-23 14:48:51.367 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 788.5077ms 
+ ]2022-09-23 14:48:51.462 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-23 14:48:51.463 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-23 14:48:51.534 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 71.3474ms 
+ ]2022-09-23 14:48:52.053 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 591.1604ms 
+ ]2022-09-23 14:48:52.119 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-23 14:48:52.156 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-23 14:48:52.157 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 0 665 image/png 37.1461ms 
+ ]2022-09-23 14:48:52.335 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-23 14:48:52.588 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 253.5097ms 
+ ]2022-09-23 14:49:55.900 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - 
+ ]2022-09-23 14:49:55.925 +03:00 [INF Executing endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 14:49:56.018 +03:00 [INF Route matched with {action = "GetProcedureTypes", controller = "ProcedureTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProcedureTypes() on controller RIS_API.Controllers.ProcedureTypesController (RIS_API). 
+ ]2022-09-23 14:49:59.086 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-23 14:49:59.935 +03:00 [INF Executing OkObjectResult, writing value of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.IEnumerable`1[[Ris2022.Data.Models.Proceduretype, RIS_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Ris2022.Repositories.GenericRepository`1+<GetAllAsync>d__5[[Ris2022.Data.Models.Proceduretype, RIS_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], RIS_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ ]2022-09-23 14:49:59.984 +03:00 [INF Executed action RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API) in 3953.676ms 
+ ]2022-09-23 14:49:59.988 +03:00 [INF Executed endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 14:49:59.989 +03:00 [ERR An unhandled exception has occurred while executing the request. 
+ System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported. Path: $.MoveNextAction.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+]2022-09-23 14:50:00.060 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - - 500 - text/plain;+charset=utf-8 4160.4513ms 
+ ]2022-09-23 14:50:00.075 +03:00 [ERR An error occurred using the connection to database 'RISdb' on server '(localdb)\mssqllocaldb'. 
+ ]2022-09-23 14:50:00.110 +03:00 [ERR An exception occurred while iterating over the results of a query for context type 'RIS_API.Data.RISDbContext'.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+ System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+]2022-09-23 15:01:03.970 +03:00 [INF Application Is Starting 
+ ]2022-09-23 15:01:04.249 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 15:01:04.363 +03:00 [INF HTTP/2 over TLS is not supported on Windows versions older than Windows 10 and Windows Server 2016 due to incompatible ciphers or missing ALPN support. Falling back to HTTP/1.1 instead. 
+ ]2022-09-23 15:01:04.375 +03:00 [INF Now listening on: https://localhost:7244 
+ ]2022-09-23 15:01:04.376 +03:00 [INF Now listening on: http://localhost:5244 
+ ]2022-09-23 15:01:04.384 +03:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-09-23 15:01:04.384 +03:00 [INF Hosting environment: Development 
+ ]2022-09-23 15:01:04.384 +03:00 [INF Content root path: C:\Users\hp\source\repos\RIS_API\RIS_API\ 
+ ]2022-09-23 15:01:06.214 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/index.html - - 
+ ]2022-09-23 15:01:07.001 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/index.html - - - 200 - text/html;charset=utf-8 799.4050ms 
+ ]2022-09-23 15:01:07.217 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-09-23 15:01:07.227 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 10.0993ms 
+ ]2022-09-23 15:01:07.231 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - 
+ ]2022-09-23 15:01:07.443 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 212.2383ms 
+ ]2022-09-23 15:01:07.573 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - 
+ ]2022-09-23 15:01:07.618 +03:00 [INF Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+ ]2022-09-23 15:01:07.618 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/favicon-16x16.png - - - 0 665 image/png 45.0248ms 
+ ]2022-09-23 15:01:07.790 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - 
+ ]2022-09-23 15:01:08.047 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 256.1918ms 
+ ]2022-09-23 15:01:16.160 +03:00 [INF Request starting HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - 
+ ]2022-09-23 15:01:16.183 +03:00 [INF Executing endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 15:01:16.270 +03:00 [INF Route matched with {action = "GetProcedureTypes", controller = "ProcedureTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProcedureTypes() on controller RIS_API.Controllers.ProcedureTypesController (RIS_API). 
+ ]2022-09-23 15:01:19.191 +03:00 [INF Entity Framework Core 6.0.9 initialized 'RISDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None 
+ ]2022-09-23 15:01:24.968 +03:00 [INF Executed DbCommand (233ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Proceduretypes] AS [p] 
+ ]2022-09-23 15:01:25.056 +03:00 [INF Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Ris2022.Data.Models.Proceduretype, RIS_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ ]2022-09-23 15:01:25.418 +03:00 [INF Executed action RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API) in 9132.2902ms 
+ ]2022-09-23 15:01:25.420 +03:00 [INF Executed endpoint 'RIS_API.Controllers.ProcedureTypesController.GetProcedureTypes (RIS_API)' 
+ ]2022-09-23 15:01:25.431 +03:00 [INF Request finished HTTP/1.1 GET https://localhost:7244/api/ProcedureTypes - - - 200 89 application/json;+charset=utf-8 9271.8009ms 
+ ]
